@@ -5,8 +5,53 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Index</title>
+	<style>
+	main {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+}
+
+div {
+  height: 20vh;
+  width: clamp(15rem, 50% + 1rem, 30rem);
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  border: 1px solid dashed;
+  font-size: clamp(1.5rem, -0.575rem + 1.35vw, 2.5rem);
+}
+
+	</style>
 </head>
 <body>
+
+<main>
+		<div style="background-color:grey"> grey/gray </div>
+		<div style="background-color:darkgrey"> dark grey </div>
+		
+		<div style="background-color:pink"> pink </div>
+		<div style="background-color:lightpink"> light pink </div>
+
+		<div style="background-color:seagreen"> sea green </div>
+		<div style="background-color:mediumseagreen"> medium sea green </div>
+
+		<div style="background-color:aquamarine"> aqua marine </div>
+		<div style="background-color:mediumaquamarine"> medium aqua marine </div>
+
+		<div style="background-color:mediumvioletred"> medium violet red </div>
+		<div style="background-color:palevioletred"> pale violet red </div>
+
+		<div style="background-color:magenta"> magenta </div>
+		<div style="background-color:fuchsia"> fuchsia </div>
+
+		<div style="background-color:cyan"> cyan </div>
+		<div style="background-color:aqua">  aqua </div>
+</main>
 
 </body>
 </html>
