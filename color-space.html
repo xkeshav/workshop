@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Color Space</title>
+	<style>
+		:root {
+			--base: #01E;
+		}
+
+		body {
+			background-color: dimgray;
+		}
+
+		main {
+			display: grid;
+			grid-auto-flow: row;
+			gap: 4px;
+		}
+		section {
+			padding: 4px;
+		}
+		div {
+			height: 15vh;
+		}
+		.lab {
+			background-image: linear-gradient(in lab to right, white, var(--base));
+		}
+		.srgb {
+			background-image: linear-gradient(in srgb to right, white, var(--base))
+		}
+		.oklab {
+			background-image: linear-gradient(in oklab to right, white, var(--base))
+		}
+		.lch {
+			background-image: linear-gradient(in lch to right, white, var(--base))
+		}
+		.oklch {
+			background-image: linear-gradient(in oklch to right, white, var(--base))
+		}
+		code {
+			font-size: 2rem;
+			color: palegoldenrod;
+		}
+	</style>
+</head>
+<body>
+<h1> color space examples </h1>
+<main>
+	<section>
+		<code>linear-gradient(in lab to right, white, #01E)</code>
+		<div class="lab"></div>
+	</section>
+	<section>
+		<code>linear-gradient(in oklab to right, white, #01E)</code>
+		<div class="oklab"></div>
+	</section>
+	<section>
+		<code>linear-gradient(in srgb to right, white, #01E)</code>
+		<div class="srgb"></div>
+	</section>
+	<section>
+		<code>linear-gradient(in lch to right, white, #01E)</code>
+		<div class="lch"></div>
+	</section>
+	<section>
+		<code>linear-gradient(in oklch to right, white, #01E)</code>
+		<div class="oklch"></div>
+	</section>
+</main>
+</body>
+</html>
