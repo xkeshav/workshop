@@ -11,9 +11,11 @@
 		}
 
 		body {
-			background-color: dimgray;
+			background-color: black;
 		}
-
+		h1 {
+			color: floralwhite
+		}
 		main {
 			display: grid;
 			grid-auto-flow: row;
@@ -24,6 +26,11 @@
 		}
 		div {
 			height: 15vh;
+		}
+		code {
+			font-size: 2rem;
+			color: palegoldenrod;
+			margin-left: 1rem;
 		}
 		.lab {
 			background-image: linear-gradient(in lab to right, white, var(--base));
@@ -40,10 +47,10 @@
 		.oklch {
 			background-image: linear-gradient(in oklch to right, white, var(--base))
 		}
-		code {
-			font-size: 2rem;
-			color: palegoldenrod;
+		.xyz {
+			background-image: linear-gradient(in xyz to right, white, var(--base));
 		}
+
 	</style>
 </head>
 <body>
@@ -68,6 +75,10 @@
 	<section>
 		<code>linear-gradient(in oklch to right, white, #01E)</code>
 		<div class="oklch"></div>
+	</section>
+	<section>
+		<code>linear-gradient(in xyz to right, white, #01E)</code>
+		<div class="xyz"></div>
 	</section>
 </main>
 </body>
