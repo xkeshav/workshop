@@ -10,6 +10,10 @@
 		:root {
 			--color: green;
 		}
+		.center {
+			display: grid;
+			place-content: center;
+		}
 
 		main {
 			display: grid;
@@ -17,16 +21,21 @@
 			grid-auto-rows: 16rem;
 			gap: 0.5rem;
 		}
-
+		
 		section {
-			background: hsl(from #1357a6 h s l / 0.5);
+			width: 100%;
+			font-size: 4rem;
 		}
 
-		section:hover {
+		.section--hsl {
+			background-color: hsl(from #1357a6 h s l / 0.5);
+		}
+
+		/*.section--hsl:hover {
 			background-color: color-mix(in oklab, currentColor 50%, white);
-		}
+		}*/
 
-		.component {
+		.section--lch {
 			--darker-accent: lch(from var(--color) calc(l / 2) c h);
 			background-color: var(--darker-accent);
 		}
@@ -34,9 +43,10 @@
 </head>
 
 <body>
+	<h1>Relative color</h1>
 	<main>
-		<section></section>
-		<div class="component"></div>
+		<section class="section--hsl center">hsl(from #1357a6 h s l / 0.5);</section>
+		<section class="section--lch center">lch(from green calc(l / 2) c h);</section>
 	</main>
 
 </body>
