@@ -10,3 +10,7 @@ install dependencies and start the server
 ```
 
 and open <http://localhost:3000>
+
+below page will be displayed
+
+![Landing Page](images/Web%20capture_14-4-2023_223131_localhost.jpeg)
