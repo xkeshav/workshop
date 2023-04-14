@@ -31,10 +31,10 @@
 			--hsl-l__40: hsl(var(--accent) 100% 40%);
 			--hsl-l__30: hsl(var(--accent) 100% 30%);
 			--hsl-l__20: hsl(var(--accent) 100% 20%);
-			--hsl-l__10: hsl(var(--accent) 100% 10%) ;
+			--hsl-l__10: hsl(var(--accent) 100% 10%);
 			--hsl-l__00: hsl(var(--accent) 100% 0%);
 		}
-		
+
 		section {
 			display: grid;
 			grid-auto-flow: row;
@@ -59,57 +59,55 @@
 		div {
 			margin: .5rem;
 			padding: 0.5rem;
-    	width: 90vw;
-    	height: 30rem;
+			width: 90vw;
+			height: 30rem;
 			border: 1px solid grey;
 		}
 
 		.saturation {
-			background-image: linear-gradient(
-    		to right,
-				var(--hsl-s__100) 8%, transparent 8% 10%,
-				var(--hsl-s__90) 10% 19%, transparent 19% 20%,
-				var(--hsl-s__80) 20% 29%, transparent 29% 30%,
-				var(--hsl-s__70) 30% 37%, transparent 37% 38%,
-				var(--hsl-s__60) 38% 45%, transparent 45% 46%,
-				var(--hsl-s__50) 46% 53%, transparent 53% 54%,
-				var(--hsl-s__40) 54% 63%,	transparent 63% 64%,
-				var(--hsl-s__30) 64% 73%, transparent 73% 74%,
-				var(--hsl-s__20) 74% 83%,	transparent 83% 84%,
-				var(--hsl-s__10) 84% 93%, transparent 93% 94%,
-				var(--hsl-s__00) 94%
-				);
+			background-image: linear-gradient(to right,
+					var(--hsl-s__100) 8%, transparent 8% 10%,
+					var(--hsl-s__90) 10% 19%, transparent 19% 20%,
+					var(--hsl-s__80) 20% 29%, transparent 29% 30%,
+					var(--hsl-s__70) 30% 37%, transparent 37% 38%,
+					var(--hsl-s__60) 38% 45%, transparent 45% 46%,
+					var(--hsl-s__50) 46% 53%, transparent 53% 54%,
+					var(--hsl-s__40) 54% 63%, transparent 63% 64%,
+					var(--hsl-s__30) 64% 73%, transparent 73% 74%,
+					var(--hsl-s__20) 74% 83%, transparent 83% 84%,
+					var(--hsl-s__10) 84% 93%, transparent 93% 94%,
+					var(--hsl-s__00) 94%);
 		}
 
 		.lightness {
-			background-image: linear-gradient(
-    		to right,
-				var(--hsl-l__100) 8%, transparent 8% 10%,
-				var(--hsl-l__90) 10% 19%, transparent 19% 20%,
-				var(--hsl-l__80) 20% 29%, transparent 29% 30%,
-				var(--hsl-l__70) 30% 37%, transparent 37% 38%,
-				var(--hsl-l__60) 38% 45%, transparent 45% 46%,
-				var(--hsl-l__50) 46% 53%, transparent 53% 54%,
-				var(--hsl-l__40) 54% 63%,	transparent 63% 64%,
-				var(--hsl-l__30) 64% 73%, transparent 73% 74%,
-				var(--hsl-l__20) 74% 83%,	transparent 83% 84%,
-				var(--hsl-l__10) 84% 93%, transparent 93% 94%,
-				var(--hsl-l__00) 94%
-				);
+			background-image: linear-gradient(to right,
+					var(--hsl-l__100) 8%, transparent 8% 10%,
+					var(--hsl-l__90) 10% 19%, transparent 19% 20%,
+					var(--hsl-l__80) 20% 29%, transparent 29% 30%,
+					var(--hsl-l__70) 30% 37%, transparent 37% 38%,
+					var(--hsl-l__60) 38% 45%, transparent 45% 46%,
+					var(--hsl-l__50) 46% 53%, transparent 53% 54%,
+					var(--hsl-l__40) 54% 63%, transparent 63% 64%,
+					var(--hsl-l__30) 64% 73%, transparent 73% 74%,
+					var(--hsl-l__20) 74% 83%, transparent 83% 84%,
+					var(--hsl-l__10) 84% 93%, transparent 93% 94%,
+					var(--hsl-l__00) 94%);
 		}
-
 	</style>
 </head>
 
 <body>
-	<h1> HSL </h1>
+	<header class="header">
+		<a href="/"> Back</a>
+		<h1> HSL Anatomy </h1>
+	</header>
 	<section>
 		<p>when saturation changes: <code>hsl(300 <span>100%</span> 50%) to hsl(300 <span>0%</span> 50%)</code></p>
 		<div class="saturation"></div>
 	</section>
-	<hr/>
+	<hr />
 	<section>
-		<p>when lightness changes:<code>hsl(300 100% <span>100%</span>) to hsl(300 100% <span>0%</span>)</code></p>
+		<p>when lightness changes: <code>hsl(300 100% <span>100%</span>) to hsl(300 100% <span>0%</span>)</code></p>
 		<div class="lightness"></div>
 	</section>
 </body>

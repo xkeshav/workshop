@@ -57,7 +57,7 @@ body {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
   grid-auto-flow: row;
-  grid-template-rows: 2rem 1fr 2rem;
+  grid-template-rows: 3rem 1fr 1rem;
 	gap: 4px;
 }
 
@@ -69,6 +69,7 @@ header {
 	display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-inline: 1rem;
 }
 

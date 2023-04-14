@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Index</title>
+	<title>Named Color</title>
 	<style>
-	main {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(250px, 1fr) );
-  align-content: center;
-  gap: 1rem;
-}
+		main {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(250px, 1fr));
+			align-content: center;
+			gap: 1rem;
+		}
 
-div {
-  height: 20vh;
-  width: auto;
-  display: grid;
-  justify-items: center;
-  align-content: center;
-  border-radius: 1rem;
-  box-sizing: border-box;
-  border: 1px solid grey;
-  font-size: clamp(1.5rem, -0.575rem + 1.35vw, 2.5rem);
-}
-
-</style>
+		div {
+			height: 20vh;
+			width: auto;
+			display: grid;
+			justify-items: center;
+			align-content: center;
+			border-radius: 1rem;
+			box-sizing: border-box;
+			border: 1px solid grey;
+			font-size: clamp(1.5rem, -0.575rem + 1.35vw, 2.5rem);
+		}
+	</style>
 </head>
-<body>
 
-<main>
+<body>
+	<header>
+		<a href="/"> Back</a>
+		<h2>Named Color</h2>
+	</header>
+	<main>
 		<div style="background-color:grey"> grey/gray </div>
 		<div style="background-color:darkgrey"> darkgrey/darkgray </div>
-		
+
 		<div style="background-color:pink"> pink </div>
 		<div style="background-color:lightpink"> lightpink </div>
 
@@ -50,7 +54,8 @@ div {
 
 		<div style="background-color:cyan"> cyan </div>
 		<div style="background-color:aqua"> aqua </div>
-</main>
+	</main>
 
 </body>
+
 </html>
