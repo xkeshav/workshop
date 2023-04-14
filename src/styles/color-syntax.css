@@ -10,7 +10,7 @@ html {
 }
 
 :root {
-	--accent-color: #72e547e0;
+	--accent-color: #ffe1ff;
 	--shadow--color: rgba(100, 100, 111, 0.2);
   --bg-header: color(xyz calc(3.5 - 1.5) calc(3.5 - 2.1) calc(1.5) / calc(1.5 - .5));
   --txt-header: color(xyz-d50 0 none none);
@@ -57,8 +57,8 @@ body {
   font-family: Calibri, 'Trebuchet MS', sans-serif;
   min-height: 100vh;
   grid-auto-flow: row;
-  grid-template-rows: 3rem 1fr 1rem;
-	gap: 4px;
+  grid-template-rows: 4rem 1fr 1rem;
+  gap: 4px;
 }
 
 header {
@@ -67,10 +67,10 @@ header {
 	background-color: var(--bg-header);
 	color: var(--txt-header);
 	display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 1rem;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 1rem;
 }
 
 main {

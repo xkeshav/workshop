@@ -9,5 +9,4 @@ install dependencies and start the server
 >npm run start
 ```
 
-and open http://localhost:3000
-
+and open <http://localhost:3000>

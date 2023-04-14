@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,80 +9,109 @@
 	<style>
 		:root {
 			--base: #01E;
+			--bg-header: #5c585524;
+			--link: hsl(113, 100%, 76%);
+		}
+
+		:any-link {
+			color: var(--link);
 		}
 
 		body {
-			background-color: black;
+			background-color: #221818;
 		}
+
 		h1 {
 			color: floralwhite
 		}
+
 		main {
 			display: grid;
 			grid-auto-flow: row;
 			gap: 4px;
 		}
+
+		header {
+			background-color: var(--bg-header);
+			color: black;
+			display: grid;
+			justify-content: space-between;
+			align-items: center;
+			padding-inline: 1rem;
+			grid-auto-flow: column;
+		}
+
 		section {
 			padding: 4px;
 		}
+
 		div {
 			height: 15vh;
 		}
+
 		code {
 			font-size: 2rem;
 			color: palegoldenrod;
 			margin-left: 1rem;
 		}
+
 		.lab {
 			background-image: linear-gradient(in lab to right, white, var(--base));
 		}
+
 		.srgb {
 			background-image: linear-gradient(in srgb to right, white, var(--base))
 		}
+
 		.oklab {
 			background-image: linear-gradient(in oklab to right, white, var(--base))
 		}
+
 		.lch {
 			background-image: linear-gradient(in lch to right, white, var(--base))
 		}
+
 		.oklch {
 			background-image: linear-gradient(in oklch to right, white, var(--base))
 		}
+
 		.xyz {
 			background-image: linear-gradient(in xyz to right, white, var(--base));
 		}
 	</style>
 </head>
+
 <body>
 	<header class="header">
 		<a href="/"> Back</a>
 		<h1> color space examples </h1>
 	</header>
-<main>
-	<section>
-		<code>linear-gradient(in lab to right, white, #01E)</code>
-		<div class="lab"></div>
-	</section>
-	<section>
-		<code>linear-gradient(in oklab to right, white, #01E)</code>
-		<div class="oklab"></div>
-	</section>
-	<section>
-		<code>linear-gradient(in srgb to right, white, #01E)</code>
-		<div class="srgb"></div>
-	</section>
-	<section>
-		<code>linear-gradient(in lch to right, white, #01E)</code>
-		<div class="lch"></div>
-	</section>
-	<section>
-		<code>linear-gradient(in oklch to right, white, #01E)</code>
-		<div class="oklch"></div>
-	</section>
-	<section>
-		<code>linear-gradient(in xyz to right, white, #01E)</code>
-		<div class="xyz"></div>
-	</section>
-</main>
+	<main>
+		<section>
+			<code>linear-gradient(in lab to right, white, #01E)</code>
+			<div class="lab"></div>
+		</section>
+		<section>
+			<code>linear-gradient(in oklab to right, white, #01E)</code>
+			<div class="oklab"></div>
+		</section>
+		<section>
+			<code>linear-gradient(in srgb to right, white, #01E)</code>
+			<div class="srgb"></div>
+		</section>
+		<section>
+			<code>linear-gradient(in lch to right, white, #01E)</code>
+			<div class="lch"></div>
+		</section>
+		<section>
+			<code>linear-gradient(in oklch to right, white, #01E)</code>
+			<div class="oklch"></div>
+		</section>
+		<section>
+			<code>linear-gradient(in xyz to right, white, #01E)</code>
+			<div class="xyz"></div>
+		</section>
+	</main>
 </body>
+
 </html>

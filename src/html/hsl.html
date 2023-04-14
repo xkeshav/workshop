@@ -9,6 +9,8 @@
 	<style>
 		:root {
 			--accent: 300;
+			--bg-header: #ffe1ff;
+			--link: hwb(45deg 30% 80%);
 			/*saturation vary */
 			--hsl-s__100: hsl(var(--accent) 100% 50%);
 			--hsl-s__90: hsl(var(--accent) 90% 50%);
@@ -33,6 +35,20 @@
 			--hsl-l__20: hsl(var(--accent) 100% 20%);
 			--hsl-l__10: hsl(var(--accent) 100% 10%);
 			--hsl-l__00: hsl(var(--accent) 100% 0%);
+		}
+
+		:any-link {
+			color: var(--link);
+		}
+
+		header {
+			background-color: var(--bg-header);
+			color: black;
+			display: grid;
+			justify-content: space-between;
+			align-items: center;
+			padding-inline: 1rem;
+			grid-auto-flow: column;
 		}
 
 		section {

@@ -1,6 +1,20 @@
+:root{
+  --bg-header: #85bdebd6;
+}
+
 body {
   background-color: #ecf5eed1;
   color: #223c2a;
+}
+
+header {
+  background-color: #85bdebd6;
+  color: white;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  grid-auto-flow: column;
 }
 
 table {
@@ -8,6 +22,7 @@ table {
   table-layout: fixed;
   border-collapse: collapse;
   border: 1px solid #9c27b0;
+  margin-block: 1rem;
 }
 
 thead {
