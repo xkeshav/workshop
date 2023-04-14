@@ -53,13 +53,9 @@ a {
 .nav--list {
   display: grid;
   grid-auto-flow: row;
+  grid-template-columns: repeat(2,1fr);
   grid-gap: 0.5em;
-  margin: 1.5rem;
   height: 100vh;
-}
-
-a:local-link {
-  color: var(--a__txt--4);
 }
 
 .list--item {
