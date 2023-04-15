@@ -1,66 +1,66 @@
 :root {
-	--base-color: #34c9eb;
-	--end-color: white;
-	--color-space: in hsl;
+  --base-color: #34c9eb;
+  --end-color: white;
+  --color-space: in hsl;
 }
 
 body {
-	display: grid;
-	grid-gap: 1rem;
-	grid-auto-flow: row;
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
 }
 
 header {
-	background-color: #90d199d6;
-	color: #111604;
-	display: grid;
-	justify-content: space-between;
-	align-items: center;
-	padding-inline: 1rem;
-	grid-auto-flow: column;
-	border-radius: 1rem;
-	margin: 0.75rem;
+  background-color: #90d199d6;
+  color: #111604;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  grid-auto-flow: column;
+  border-radius: 1rem;
+  margin: 0.75rem;
 }
 
 main {
-	padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 section {
-	display: grid;
-	grid-auto-flow: row;
-	grid-gap: 0.5rem;
-	grid-template-rows: repeat(6,1fr);
-	height: 85vh;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 0.5rem;
+  grid-template-rows: repeat(6, 1fr);
+  height: 85vh;
 }
 
 section > div {
-	display: grid;
-	font-size: 2rem;
-	place-content: center;
-	border-radius: 4px;
+  display: grid;
+  font-size: 2rem;
+  place-content: center;
+  border-radius: 4px;
 }
 
 div:nth-child(1) {
-	background-color: color-mix(var(--color-space), var(--base-color) 0%, var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color) 0%, var(--end-color));
 }
 
 div:nth-child(2) {
-	background-color: color-mix(var(--color-space), var(--base-color) 25%, var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color) 25%, var(--end-color));
 }
 
 div:nth-child(3) {
-	background-color: color-mix(var(--color-space), var(--base-color) 50%, var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color) 50%, var(--end-color));
 }
 
 div:nth-child(4) {
-	background-color: color-mix(var(--color-space), var(--base-color) 75%, var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color) 75%, var(--end-color));
 }
 
 div:nth-child(5) {
-	background-color: color-mix(var(--color-space), var(--base-color) 100%, var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color) 100%, var(--end-color));
 }
 
 div:nth-child(6) {
-	background-color: color-mix(var(--color-space), var(--base-color), var(--end-color));
+  background-color: color-mix(var(--color-space), var(--base-color), var(--end-color));
 }

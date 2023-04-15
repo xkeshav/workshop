@@ -26,8 +26,11 @@ router.get('/index', (_, res) => {
   res.sendFile(`${HTML_DIR}/index.html`);
 });
 
+router.get('/css', (_, res) => {
+  res.sendFile(`${HTML_DIR}/css1-color.html`);
+});
+
 router.get('/named', (_, res) => {
-  console.log('typing....');
   res.sendFile(`${HTML_DIR}/named-color.html`);
 });
 

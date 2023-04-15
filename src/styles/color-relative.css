@@ -9,11 +9,10 @@
   place-content: center;
 }
 
-
 body {
-	display: grid;
-	grid-gap: 1rem;
-	grid-auto-flow: row;
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
 }
 
 header {
