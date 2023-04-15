@@ -9,9 +9,16 @@
   place-content: center;
 }
 
+
+body {
+	display: grid;
+	grid-gap: 1rem;
+	grid-auto-flow: row;
+}
+
 header {
-  background-color: var(--bg-header);
-  color: var(--txt-header);
+  background-color: var(--bg__header);
+  color: var(--txt__header);
   display: grid;
   justify-content: space-between;
   align-items: center;

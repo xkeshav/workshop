@@ -10,13 +10,6 @@ body {
 	grid-auto-flow: row;
 }
 
-section {
-	display: grid;
-	grid-auto-flow: column;
-	grid-gap: 0.5rem;
-	grid-auto-columns: auto;
-}
-
 header {
 	background-color: #90d199d6;
 	color: #111604;
@@ -29,11 +22,23 @@ header {
 	margin: 0.75rem;
 }
 
+main {
+	padding: 1.5rem;
+}
+
+section {
+	display: grid;
+	grid-auto-flow: row;
+	grid-gap: 0.5rem;
+	grid-template-rows: repeat(6,1fr);
+	height: 85vh;
+}
+
 section > div {
-	height: 20vh;
 	display: grid;
 	font-size: 2rem;
 	place-content: center;
+	border-radius: 4px;
 }
 
 div:nth-child(1) {

@@ -28,7 +28,7 @@ html {
 	--color-9: rgba(40%, 20%, 60%, 100%);
 	--color-10: hsl(270 50% 40%);
 	--color-11: hsl(270deg 50% 40%);
-	--color-12: hsla(270, 50%, 40%, 100%);
+	--color-12: hsla(270 50% 40% / 100%);
 	--color-13: hwb(270 20% 40%);
 	--color-14: hwb(270deg 20% 40%);
 	--color-15: hwb(4.712rad 20% 40%);
@@ -106,7 +106,7 @@ footer {
 
 em {
 	font-size: 1.25rem;
-	font-size-adjust: inherit;
+  word-spacing: 1ch;
 }
 
 .btn {
