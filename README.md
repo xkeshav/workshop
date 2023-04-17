@@ -1,6 +1,8 @@
 # Color - Talk
 
-How to start
+This repo was created for my very first talk on **CSS**. meetup details written at bottom.
+
+## How to start
 
 install dependencies and start the server
 
@@ -11,6 +13,65 @@ install dependencies and start the server
 
 and open <http://localhost:3000>
 
-below page will be displayed
+## Screenshots
 
-![Landing Page](https://github.com/xkeshav/workshop/blob/02ba63982025f6168b8bb77d0563004b924b4c39/images/Web%20capture_14-4-2023_223131_localhost.jpeg)
+Landing Page
+---
+
+![Landing Page][1]
+
+CSS 1 Color
+---
+
+![css1 16 valid color][2]
+
+Named Color
+---
+
+![Named color][3]
+
+HSL Anatomy
+---
+
+![HSL Anatomy][4]
+
+Color Space
+---
+
+![basic color syntax in all format][5]
+
+Color Mix
+---
+
+![color-mix syntax ][6]
+
+Color Syntax
+---
+
+![1 color 34 syntax][7]
+
+Relative color
+----
+
+![Relative Color][8]
+
+---
+[1]: images/landing.png
+[2]: images/css1-16color.jpeg
+[3]: images/named-color.jpeg
+[4]:images/hsl-anatomy.png
+[5]: images/color-space.png
+[6]: images/color-mix.png
+[7]: images/color-syntax.jpeg
+[8]: images/relative-color.png
+
+Thanks for reading.
+
+## Details
+
+> *Event:* React Bangalore Meetup #66  
+> *Topic:* All About color in CSS  
+> *Date*: Sat, 15 Apr, 2023.
+
+[Youtube Link](https://www.youtube.com/watch?v=V_Bvsw9KgYI&t=1h15m53s)
+---

@@ -24,7 +24,9 @@ h1 {
 main {
   display: grid;
   grid-auto-flow: row;
+  grid-row: repeat(2, 1fr);
   gap: 4px;
+  /* grid-template-rows: repeat(3, max-content); */
 }
 
 header {
