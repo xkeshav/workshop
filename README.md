@@ -6,7 +6,7 @@ install dependencies and start the server
 
 ```sh
 >npm install
->npm run start
+>npm run serve
 ```
 
 and open <http://localhost:3000>

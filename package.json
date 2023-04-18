@@ -2,10 +2,13 @@
   "name": "workshop",
   "version": "1.0.0",
   "description": "fun of colors",
+  "type": "module",
   "main": "start.js",
   "scripts": {
     "start": "nodemon --watch . --exec babel-node -- start.js",
-    "build": "parcel build index.js"
+    "serve": "NODE_ENV=dev nodemon dist/index.js",
+    "build": "parcel build index.js",
+    "watch": "parcel watch"
   },
   "author": "Keshav Mohta",
   "license": "ISC",
