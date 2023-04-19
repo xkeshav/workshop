@@ -5,6 +5,8 @@
   "type": "module",
   "main": "start.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "nodemon --watch . --exec babel-node -- start.js",
     "serve": "NODE_ENV=dev nodemon dist/index.js",
     "build": "parcel build index.js",
@@ -12,7 +14,7 @@
   },
   "author": "Keshav Mohta",
   "publisher": "xkeshav",
-  "homepage": "https://github.com/xkeshav/workshop/blob/main/README.md",
+  "homepage": "https://gitname.github.io/workshop",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
     "url": "https://github.com/xkeshav/workshop/issues",
@@ -36,6 +38,7 @@
     "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
     "eslint-plugin-import": "2.17.2",
+    "gh-pages": "^5.0.0",
     "nodemon": "^2.0.22",
     "parcel": "^2.8.3"
   }
