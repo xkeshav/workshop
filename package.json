@@ -7,7 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "nodemon --watch . --exec babel-node -- start.mjs",
+    "start": "nodemon --watch . --exec babel-node -- index.js",
     "serve": "NODE_ENV=dev nodemon dist/index.js",
     "build": "parcel build index.js",
     "watch": "parcel watch"
