@@ -29,26 +29,28 @@ main {
 
 header {
   background-color: var(--bg__header);
-  color: var(--header__txt--2);
   display: grid;
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
   grid-auto-flow: column;
+  & div {
+    color: white;
+  }
 }
 
 section {
   padding: 4px;
-}
 
-div {
-  height: 15vh;
-}
+  & div {
+    height: 15vh;
+  }
 
-code {
-  font-size: 2rem;
-  color: var(--code__txt--3);
-  margin-left: 1rem;
+  & code {
+    font-size: 2rem;
+    color: var(--code__txt--3);
+    margin-left: 1rem;
+  }
 }
 
 .lab {

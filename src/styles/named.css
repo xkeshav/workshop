@@ -39,7 +39,7 @@ header {
   margin: 0.75rem;
 }
 
-div {
+:where(main) div {
   height: 20vh;
   width: auto;
   display: grid;

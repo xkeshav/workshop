@@ -2,12 +2,17 @@
 
 How to start
 
-install dependencies and start the server
+install dependencies
 
 ```sh
 >npm install
->npm run serve
 ```
+
+in development ; run > `npm run start`
+
+in production; build > `npm run build`
+
+then run > `npm run serve`
 
 and open <http://localhost:3000>
 

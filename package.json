@@ -5,7 +5,7 @@
   "type": "module",
   "main": "start.js",
   "scripts": {
-    "start": "nodemon --watch . --exec babel-node -- start.js",
+    "start": "nodemon --watch . --exec babel-node ./index.js",
     "serve": "NODE_ENV=dev nodemon dist/index.js",
     "build": "parcel build index.js",
     "watch": "parcel watch"
