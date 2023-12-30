@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node Project
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   first_job:
     name:  My First job
-    runs-on: ubuntu-runners
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
