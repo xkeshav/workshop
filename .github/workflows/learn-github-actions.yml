@@ -3,14 +3,17 @@ run-name: ${{ github.actor }} is learning GitHub Actions
 
 on: 
   push:  
-  branches: [ zeroPoint/parcel ]
-  
+    branches: [ zeroPoint/parcel ]
+
 jobs:
-  check-bats-version:
+  install:
+
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      - name: Use name block
       - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18.x'
       - run: npm install
