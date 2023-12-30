@@ -3,24 +3,24 @@ name: Node.js CI
 on:
   push:
     branches:
-      - zeroPoint/parcel
+      - 'zeroPoint/parcel'
 
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
+  first_job:
+    name:  My First job
+    runs-on: ubuntu-runners
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+          with:
+            node-version: '16.x'
+
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
         
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14.x'
+      - name: Use Node.js ${{ matrix.node-version }
       - run: npm ci
-      
+
       - name: Install dependencies
       - run: npm run build
