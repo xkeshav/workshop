@@ -12,15 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
-          with:
-            node-version: '16.x'
+        with:
+          node-version: '16.x'
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
         
       - name: Use Node.js ${{ matrix.node-version }
-      - run: npm ci
+        run: npm ci
 
       - name: Install dependencies
-      - run: npm run build
+        run: npm run build
