@@ -29,8 +29,10 @@ jobs:
           npm run test --if-present
       
       - name: upload artifac for deployement 
-        uses: actions/upload-arifacts@v3
+        uses: actions/upload-arifact@v3
         with:
           name: node-app
           path: .
       
+      - name: serve
+        run: npm run serve
