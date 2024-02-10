@@ -1,3 +1,4 @@
+// @ts-nocheck
 
 console.log('inside syntax js');
 const main = document.querySelector('main');
@@ -11,11 +12,11 @@ const buildDiv = (n) => {
 Array.from({ length: 34 }, (_, i) => buildDiv(i));
 main.appendChild(fragment);
 /* show bg color property on hover */
-const btn = document.getElementById('show');
+const button = document.getElementById('show');
 let isPropertyVisible = false;
-btn.addEventListener('click', () => {
+button.addEventListener('click', () => {
 	isPropertyVisible = !isPropertyVisible;
-	btn.textContent = isPropertyVisible ? 'hide' : 'show';
+	button.textContent = isPropertyVisible ? 'hide' : 'show';
 	const divList = document.querySelectorAll('div');
 	if(isPropertyVisible) {
 		const style = getComputedStyle(document.body);

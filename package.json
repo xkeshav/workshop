@@ -1,7 +1,7 @@
 {
   "name": "workshop",
   "version": "1.0.0",
-  "description": "fun of colors",
+  "description": "fun of colors; used in one of my talk.",
   "type": "module",
   "main": "start.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "watch": "parcel watch"
   },
   "author": "Keshav Mohta",
-  "publisher": "xkeshav",
+  "publisher": "@xkeshav",
   "homepage": "https://gitname.github.io/workshop",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
