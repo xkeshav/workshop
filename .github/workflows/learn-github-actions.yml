@@ -29,7 +29,7 @@ jobs:
           npm run test --if-present
       
       - name: upload artifact for deployement 
-        uses: @actions/upload-arifact@v3
+        uses: @actions/upload-arifact@v4
         with:
           name: node-app
           path: .
