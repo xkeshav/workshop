@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  deployement:
+  deployment:
     runs-on: ubuntu-latest
     environment: production
     steps:
@@ -27,12 +27,7 @@ jobs:
           npm install 
           npm run build --if-present
           npm run test --if-present
-      
-      - name: upload artifac for deployement 
-        uses: actions/upload-arifact@v3
-        with:
-          name: node-app
-          path: .
+    
       
       - name: serve
         run: npm run serve
