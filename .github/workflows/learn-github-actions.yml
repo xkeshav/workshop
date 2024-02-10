@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4.0.2
         with:
           node-version: '14'
           cache: 'npm'
@@ -28,7 +28,7 @@ jobs:
           npm run build --if-present
           npm run test --if-present
       
-      - name: upload artifact for deployement 
+      - name: upload artifact for deployement
         uses: @actions/upload-arifact@v4
         with:
           name: node-app
