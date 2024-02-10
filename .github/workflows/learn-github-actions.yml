@@ -2,12 +2,13 @@ name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: 
   push:
-  branches:
-    - main
-    - 'feature/*'
+    branches:
+      - main
+      - 'feature/*'
   pull_request:
     branches:
       - main
+
 jobs:
   deployement:
     runs-on: ubuntu-latest
@@ -22,13 +23,13 @@ jobs:
           cache: 'npm'
 
       - name : npm install, build and test
-      run: |
-        npm install 
-        npm run build --if-present
-        npm run test --if-present
+        run: |
+          npm install 
+          npm run build --if-present
+          npm run test --if-present
       
-      - name: upload artifac for deployement 
-        uses: @actions/upload-arifacts@v3
+      - name: upload artifact for deployement 
+        uses: @actions/upload-arifact@v3
         with:
           name: node-app
           path: .
