@@ -25,6 +25,8 @@
       "titleBar.inactiveForeground": "#e7e7e799"
     },
     "peacock.color": "#832561",
-    "explorer.excludeGitIgnore": true
+    "explorer.excludeGitIgnore": true,
+    "typescript.format.enable": false,
+    "typescript.validate.enable": false
   }
 }
