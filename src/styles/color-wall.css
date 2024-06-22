@@ -1,0 +1,74 @@
+:root {
+  --bg-header: #85bdebd6;
+}
+
+body {
+  background-color: #ecf5eed1;
+  color: #223c2a;
+}
+
+header {
+  background-color: #85bdebd6;
+  color: white;
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  grid-auto-flow: column;
+  border-radius: 1rem;
+  margin: 0.75rem;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #9c27b0;
+  margin-block: 1rem;
+}
+
+thead {
+  height: 12vh;
+}
+
+tbody > tr {
+  cursor: pointer;
+  height: 6vh;
+  font-size: clamp(min(2vw, 2rem), 20px, max(4vw, 4rem));
+  transition: font-size 200ms ease-in-out;
+}
+
+tr:hover,
+tr:visited {
+  opacity: 1;
+  font-size: calc(1.5em + 1vw);
+  background-color: azure;
+}
+
+th {
+  color: transparent;
+}
+
+td {
+  border: 1px solid grey;
+  padding: 4px;
+  font-variant: traditional;
+}
+
+th:nth-child(1) {
+  background-color: oklch(0 0 0);
+}
+
+th:nth-child(2) {
+  background-color: oklab(0.63 0.23 0.13);
+}
+th:nth-child(3) {
+  background-color: oklab(0.87 -0.23 0.18);
+}
+th:nth-child(4) {
+  background-color: oklab(0.45 -0.03 -0.31);
+}
+
+th:nth-child(5) {
+  background-color: oklab(1 0 0);
+}

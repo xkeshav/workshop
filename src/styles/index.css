@@ -1,0 +1,129 @@
+/* following :root block added by css color collector */
+:root {
+  --bg-header: #ffe1ff;
+  --link: hwb(45deg 30% 80%);
+  --logo__txt--1: firebrick;
+  --main__bg--3: #e7dcd5;
+  --a__txt--4: green;
+  --list__bg__img--5: #c352a2;
+  --list__bg__img--6: #d41f56;
+  --list__bg__img--7: #acb9ba;
+  --list__box__shadow--8: rgba(0, 0, 0, 0.1);
+  --li__bg__img--9: #9d5050;
+  --li__bg__img--10: #7c727b;
+  --link__txt--11: #f0e5f0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+:any-link {
+  color: var(--link);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: 4rem 1fr 2rem;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-gap: 4px;
+  align-content: center;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: var(--bg-header);
+  color: var(--txt-header);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  font-size: 2.5rem;
+}
+
+.header--content {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  grid-area: main;
+  font-family: system-ui, cursive;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+}
+
+.nav--list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 0.5rem;
+  /* height: 89vh; */
+  /* height: 100vh; */
+  grid-auto-flow: row;
+}
+
+.list--item {
+  place-content: center;
+  display: grid;
+  height: 20vh;
+  border-radius: 5px;
+  background-image: linear-gradient(45deg, var(--list__bg__img--5) 20%, var(--list__bg__img--6) 30%, var(--list__bg__img--7));
+  box-shadow: 0px 10px 15px -3px var(--list__box__shadow--8);
+}
+
+li.list--item:hover {
+  background-image: linear-gradient(45deg, #120101, var(--li__bg__img--10));
+}
+
+.link--base {
+  color: var(--link__txt--11);
+  font-size: 6rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.link--base:hover {
+  color: #c5e055;
+}
+
+.list--item:hover {
+  animation: moving 2s;
+}
+
+@keyframes moving {
+  from,
+  to {
+    transform: translateX(0);
+  }
+
+  30% {
+    transform: translateX(20px);
+  }
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+  align-self: center;
+}
