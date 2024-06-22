@@ -1,0 +1,10 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./app" },
+    { "path": "./db" },
+    { "path": "./edge" },
+    { "path": "./scripts" },
+    { "path": "./server" }
+  ]
+}
