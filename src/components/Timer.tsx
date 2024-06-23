@@ -13,7 +13,7 @@ export const Timer = () => {
         setIsPaused(false);
         if(!isStarted) {
             setIsInterval(setInterval(() => {
-                setTime(p => p + 0.01);
+                setTime(p => + Number(p + 0.01).toFixed(2));
             }, 100));
         }
     }
