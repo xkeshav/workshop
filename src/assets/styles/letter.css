@@ -1,0 +1,14 @@
+.container__letter {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 8px;
+    grid-column: auto;
+
+    & p {
+        text-align: center;
+        background-color: aliceblue;
+        font-size: 2rem;
+        padding: 1rem 0.5rem;
+        cursor: pointer;
+    }
+}

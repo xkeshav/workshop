@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+main {
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+}
+
+.card {
+  padding: 2em;
+}
+
+.result {
+  font-size: large;
+  margin: auto;
+  & span {
+    color: purple;
+    font-size: 1.5rem;
+  }
+}
