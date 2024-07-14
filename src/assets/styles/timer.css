@@ -1,0 +1,8 @@
+.section__timer {
+  border: thick solid #5d1414;
+  padding: 0.5rem;
+  outline: 1rem double #32a1ce;
+  outline-offset: 1rem;
+  margin: 3rem 2rem;
+  background-color: antiquewhite;
+}

@@ -3,5 +3,38 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"editor.indentSize": "tabSize",
+		"editor.formatOnSave": true,
+		"workbench.colorCustomizations": {
+			"activityBar.activeBackground": "#664d33",
+			"activityBar.background": "#664d33",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#4a9570",
+			"activityBarBadge.foreground": "#e7e7e7",
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#664d33",
+			"statusBar.background": "#443322",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#664d33",
+			"statusBarItem.remoteBackground": "#443322",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#443322",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#44332299",
+			"titleBar.inactiveForeground": "#e7e7e799"
+		},
+		"peacock.color": "#443322",
+		"editor.codeActionsOnSave": {
+			"source.addMissingImports.ts": "always",
+			"source.fixAll.eslint": "always",
+			"source.organizeImports": "always",
+			"source.sortImports": "explicit",
+			"source.removeUnusedImports": "always"
+		}
+	}
 }

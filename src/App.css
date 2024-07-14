@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
 }
+
 main {
   display: grid;
   grid-auto-flow: row;
@@ -16,8 +17,17 @@ main {
 .result {
   font-size: large;
   margin: auto;
+
   & span {
     color: purple;
     font-size: 1.5rem;
   }
+}
+
+.section {
+  border: thick solid #5d1414;
+  padding: 0.5rem;
+  outline: 1rem double #32a1ce;
+  outline-offset: 1rem;
+  margin: 3rem 2rem;
 }

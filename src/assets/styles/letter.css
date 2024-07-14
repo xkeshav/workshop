@@ -10,5 +10,38 @@
         font-size: 2rem;
         padding: 1rem 0.5rem;
         cursor: pointer;
+        border: thin solid #04361a;
+        transition: border 100ms ease-in-out;
+
+        & :focus-within {
+            font-weight: bold;
+        }
+
+        :focus-visible {
+            outline: 3px solid currentColor;
+        }
+
+        &:active {
+            border-color: pink;
+            color: rgb(110, 110, 211);
+            transform: scale(1.2);
+        }
+    }
+}
+
+.output {
+    color: red;
+    padding-inline: 1rem;
+    margin-block: 0.5rem;
+
+    & span {
+        font-size: larger;
+        color: #452367;
+        padding: 4px;
+    }
+
+    span {
+        border: 2px solid grey;
+        margin-inline: 1rem;
     }
 }
