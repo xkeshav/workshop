@@ -13,7 +13,7 @@
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-node_modules
+**/node_modules/**
 
 # Logs
 yarn-debug.log*
