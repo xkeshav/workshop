@@ -29,5 +29,5 @@ jobs:
           npm run test --if-present
 
       - name : serve
-        run: npm run serve
+        # run: npm run serve
     
