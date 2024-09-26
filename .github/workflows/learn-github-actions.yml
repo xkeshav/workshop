@@ -27,4 +27,7 @@ jobs:
           npm install 
           npm run build --if-present
           npm run test --if-present
+
+      - name : serve
+        run: npm run serve
     

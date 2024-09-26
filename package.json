@@ -15,7 +15,7 @@
   "author": "Keshav Mohta",
   "publisher": "@xkeshav",
   "homepage": "https://xkeshav.github.io/workshop",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xkeshav/workshop/issues",
     "email": "xkeshav@gmail.com"

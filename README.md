@@ -1,4 +1,4 @@
-## Color - Talk
+# Color - Talk
 
 This repo was created for my very first talk on **CSS**. meetup details written at bottom.
 
