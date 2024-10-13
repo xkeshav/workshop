@@ -21,6 +21,11 @@ main {
   & span {
     color: purple;
     font-size: 1.5rem;
+    margin: 1rem 0.5rem;
+    border: 1px solid grey;
+    width: 4rem;
+    display: inline-block;
+    padding-inline: 0.5rem;
   }
 }
 

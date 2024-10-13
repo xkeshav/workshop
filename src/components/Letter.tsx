@@ -4,7 +4,8 @@ import '../assets/styles/letter.css';
 
 type LetterProps = unknown;
 
-const Letter: React.FC<LetterProps> = () => {
+const Letter = (props: LetterProps) => {
+  console.log({ props });
   const [word, setWord] = useState('');
 
   const convertTo = (letter: string | null) => {
