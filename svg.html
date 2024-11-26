@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Workshop</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+    }
+
+    .menu {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      padding: 0;
+    }
+
+    .line {
+      fill: none;
+      stroke: black;
+      stroke-width: 6;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line1 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+
+    .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+    }
+
+    .line3 {
+      stroke-dasharray: 60 207;
+      stroke-width: 6;
+    }
+
+    .opened .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+
+    .opened .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
+
+    .opened .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+
+    article {
+      display: initial;
+      height: 100%;
+    }
+
+    section {
+      height: auto;
+      width: auto;
+      border: 2px solid red;
+      margin: 1rem;
+      padding: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>svg learning</h1>
+  <article>
+    <section title="hamburger">
+
+      <svg xmlns="http://www.w3.org/svg" fill="current" viewBox="0 0 100 80" width="100" height="80"
+        title="toggle menu">
+        <path class="line line1"
+          d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+        <path class="line line2" d="M 20,50 H 80" />
+        <path class="line line3"
+          d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+      </svg>
+    </section>
+    <section title="animate shape">
+      <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
+        aria-label="animate shape which change round to square">
+        <rect width="10" height="10">
+          <animate attributeName="rx" values="0;5;0" dur="10s" repeatCount="indefinite" />
+        </rect>
+      </svg>
+    </section>
+    <section title="animation and motion: infinite symbol">
+      <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg" width="500" height="300"
+        aria-label="infinite sign where a red circle keep moving around its node" stroke-opacity="0.7" stroke="khaki"
+        stroke-width="3">
+        <path fill="none" stroke="lightgrey" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+        <circle r="5" fill="red">
+          <animateMotion dur="10s" repeatCount="indefinite"
+            path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+        </circle>
+      </svg>
+    </section>
+    <section title="repeating shape reference">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+        <!-- Define a reusable shape -->
+        <symbol id="circleSymbol">
+          <circle cx="50" cy="50" r="40" fill="currentColor" />
+        </symbol>
+        <!-- Reuse the shape multiple times -->
+        <use xlink:href="#circleSymbol" x="0" y="0" />
+        <use xlink:href="#circleSymbol" x="100" y="0" />
+        <use xlink:href="#circleSymbol" x="0" y="100" fill="red" />
+      </svg>
+    </section>
+    <section>
+      <svg id="svgCanvas" width="200" height="200" xmlns="http://www.w3.org/2000/svg" style="border: 1px solid black"
+        title="add image in svg using js">
+        <!-- SVG content goes here -->
+      </svg>
+    </section>
+    <section title="repeating shape reference  using fillColor and inline style">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+        <!-- Define a reusable shape -->
+        <symbol id="circleSymbol">
+          <circle cx="50" cy="50" r="40" fill="currentColor" />
+        </symbol>
+        <!-- Reuse the shape multiple times -->
+        <use xlink:href="#circleSymbol" x="0" y="0" />
+        <use xlink:href="#circleSymbol" x="100" y="0" />
+        <use xlink:href="#circleSymbol" x="0" y="100" style="color:red" />
+      </svg>
+    </section>
+
+    <section title="repeating shape reference removing fill from symbol">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="200">
+        <!-- Define a reusable shape -->
+        <symbol id="circleSymbol">
+          <circle cx="50" cy="50" r="40" />
+        </symbol>
+        <!-- Reuse the shape multiple times -->
+        <use xlink:href="#circleSymbol" x="0" y="0" color="grey" />
+        <use xlink:href="#circleSymbol" x="100" y="0" />
+        <use xlink:href="#circleSymbol" x="0" y="100" />
+      </svg>
+    </section>
+  </article>
+  <script>
+
+    // very useful when user can save the svg but not the picture within it
+    // Get the SVG canvas
+    const svgCanvas = document.getElementById('svgCanvas');
+
+    const SVG_NS = 'http://www.w3.org/2000/svg';
+    const XLink_NS = 'http://www.w3.org/1999/xlink';
+    const image = document.createElementNS(SVG_NS, 'image');
+    image.setAttributeNS(null, 'x', '50'); // X position of the image
+    image.setAttributeNS(null, 'y', '50');
+    image.setAttributeNS(null, 'width', '100');
+    image.setAttributeNS(null, 'height', '100');
+    image.setAttributeNS(XLink_NS, 'xlink:href', 'ice-cream.jpg');
+    image.setAttributeNS(null, "preserveAspectRatio", "xMidYMid meet");
+    svgCanvas.appendChild(image);
+  </script>
+</body>
+
+</html>
