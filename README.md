@@ -7,8 +7,8 @@ This repo was created for my very first talk on **CSS**. meetup details written 
 install dependencies and start the server
 
 ```sh
->npm install
->npm run start
+npm install
+npm run start
 ```
 
 and open <http://localhost:3000>

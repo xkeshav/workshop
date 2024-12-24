@@ -79,5 +79,5 @@ app.use('/', express.static(BASE_DIR));
 app.use('/', router);
 
 app.listen(port, () => {
-  console.log(' listening port ' + port);
+  console.log(`listening ast http://localhost:${port}`);
 });
