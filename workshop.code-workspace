@@ -29,6 +29,9 @@
     "peacock.color": "#832561",
     "explorer.excludeGitIgnore": true,
     "typescript.format.enable": false,
-    "typescript.validate.enable": false
+		"typescript.validate.enable": false,
+		"files.exclude": {
+			"**/.git": false
+		}
   }
 }
