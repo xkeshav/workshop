@@ -1,12 +1,14 @@
 
 import './App.css';
+import { BlockList } from './components/BlockList';
 import { Problem } from './components/Problem';
 
 const App = () => (
   <main className='main'>
     <Problem.Timer />
     <Problem.Letter />
-  </main>
+    <BlockList />
+  </main >
 );
 
 export default App

@@ -68,3 +68,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.block {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  border: 1px solid #9ea0bc;
+  place-items: center;
+  place-content: center;
+  border-radius: 8px;
+  margin: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s
+}

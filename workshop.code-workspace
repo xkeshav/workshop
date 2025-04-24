@@ -37,6 +37,7 @@
 			"source.organizeImports": "always",
 			"source.sortImports": "explicit",
 			"source.removeUnusedImports": "always"
-		}
+		},
+		"editor.inlayHints.enabled": "offUnlessPressed"
 	}
 }
