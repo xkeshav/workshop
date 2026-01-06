@@ -4,14 +4,7 @@ This repo was created for my very first talk on **CSS**. meetup details written 
 
 ## How to start
 
-install dependencies and start the server
-
-```sh
-npm install
-npm run start
-```
-
-and open <http://localhost:3000>
+clone and open index.html
 
 ## Screenshots
 
