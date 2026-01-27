@@ -1,12 +1,14 @@
 import { Letter } from './Letter';
-import { Timer } from './Timer';
+import { Search } from './Search';
+import { Timer } from './Timer2';
 
 
 // export type ProblemProps = object
 // convert file extension from .tsx to .ts also works
 export const Problem = {
   Letter: Letter,
-  Timer: Timer
+  Timer: Timer,
+  Search: Search
 }
 
 // const ProblemC = (props: ProblemProps) => {
